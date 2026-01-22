@@ -1,0 +1,10 @@
+import React from 'react';
+import { Text, View } from 'react-native';
+
+export default function ProfileScreen() {
+    return (
+        <View className='screen-wrapper gap-4'>
+            <Text>ProfileScreen</Text>
+        </View>
+    );
+}

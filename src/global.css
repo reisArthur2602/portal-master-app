@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.screen-wrapper {
+    @apply flex-1 p-6 bg-background;
+}
+
+.title {
+    @apply text-2xl font-extrabold tracking-tighter text-foreground;
+}
+.subtitle {
+    @apply text-base font-medium  text-mutedForeground;
+}
+
+.btn {
+    @apply bg-primary p-4 rounded-lg items-center justify-center;
+}
+
+.btn-text {
+    @apply font-semibold text-secondary text-base;
+}
+
+.input {
+    @apply border border-border rounded-lg text-base text-foreground bg-muted/15 p-4;
+}
+
+.label {
+    @apply text-foreground font-semibold;
+}
