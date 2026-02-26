@@ -1,39 +1,43 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/**/*.{js,jsx,ts,tsx}'],
-    presets: [require('nativewind/preset')],
-    theme: {
-        extend: {
-            colors: {
-                background: '#FAFAFB',
-                foreground: '#0F172A',
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      fontFamily: {
+        grotesk: ["SpaceGrotesk"],
+      },
 
-                card: '#F8FAFC',
-                cardForeground: '#020617',
+      colors: {
+        background: "#FAFAFB",
+        foreground: "#0F172A",
 
-                popover: '#FFFFFF',
-                popoverForeground: '#0F172A',
+        card: "#F8FAFC",
+        cardForeground: "#020617",
 
-                primary: '#2563EB',
-                primaryForeground: '#FFFFFF',
+        popover: "#FFFFFF",
+        popoverForeground: "#0F172A",
 
-                secondary: '#F1F5F9',
-                secondaryForeground: '#475569',
+        primary: "#0071FF",
+        primaryForeground: "#FFFFFF",
 
-                muted: '#E5E7EB',
-                mutedForeground: '#6B7280',
+        secondary: "#F1F5F9",
+        secondaryForeground: "#475569",
 
-                accent: '#E2E8F0',
-                accentForeground: '#334155',
+        muted: "#E5E7EB",
+        mutedForeground: "#6B7280",
 
-                destructive: '#DC2626',
-                destructiveForeground: '#FFFFFF',
+        accent: "#E2E8F0",
+        accentForeground: "#334155",
 
-                border: '#E5E7EB',
-                input: '#E5E7EB',
-                ring: '#2563EB',
-            },
-        },
+        destructive: "#DC2626",
+        destructiveForeground: "#FFFFFF",
+
+        border: "#E5E7EB",
+        input: "#E5E7EB",
+        ring: "#2563EB",
+      },
     },
-    plugins: [],
+  },
+  plugins: [],
 };
