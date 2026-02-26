@@ -1,16 +1,19 @@
 import { SignInForm } from "@/src/components/screens/auth/sign-in-form";
 import { useRouter } from "expo-router";
-import { Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Text, View } from "react-native";
+
 
 export default function AuthScreen() {
   const { push } = useRouter();
   return (
-    <SafeAreaView className="bg-primary flex-1 p-6 gap-6">
-      <Text className="text-primaryForeground font-bold text-3xl">
-        Acesse sua conta
+    <View className="flex-1">
+
+      <Text className="text-primaryForeground font-extrabold text-5xl mb-12">
+        Acessar sua conta.
       </Text>
+
       <SignInForm />
-    </SafeAreaView>
+
+    </View>
   );
 }

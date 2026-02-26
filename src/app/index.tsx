@@ -7,17 +7,17 @@ export default function HomeScreen() {
   const { push } = useRouter();
 
   return (
-    <SafeAreaView className="flex-1 bg-primary px-6 py-12">
+    <SafeAreaView className="flex-1 bg-primary p-6">
       <Logo width={180} height={180} />
 
       <View className="gap-8 mt-auto mb-16">
-        <Text className="text-primaryForeground font-bold text-5xl">
+        <Text className="text-primaryForeground font-extrabold text-5xl">
           Seu cuidado começa aqui.
         </Text>
 
         <TouchableOpacity
           onPress={() => push("/(auth)")}
-          className="bg-primaryForeground rounded-full p-4 items-center justify-center "
+          className="bg-primaryForeground rounded-md p-4 items-center justify-center "
         >
           <Text className="text-primary font-semibold text-xl">
             Acessar minha conta
